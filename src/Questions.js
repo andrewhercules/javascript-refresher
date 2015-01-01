@@ -92,3 +92,32 @@ function returnFirstHalfOfString(string) {
 function makeNumberNegative(number) {
   return number < 0 ? number : number * -1
 };
+
+// Question 11
+
+function separateArrayIntoEvenAndOddNumbers(array) {
+  var result = []
+  var evenArray = array.filter(isEven);
+  var oddArray = array.filter(isOdd);
+  result.push(evenArray, oddArray);
+  return result
+};
+
+function isEven(element) {
+  return element % 2 === 0;
+};
+
+function isOdd(element) {
+  return element % 2 === 1;
+};
+
+// Question 12
+
+function numberOfElementsThatArePalindromes(array) {
+  var result = array.filter(isAPalindrome).length;
+  return result
+};
+
+function isAPalindrome(element) {
+  return element === element.split('').reverse().join('');
+};
