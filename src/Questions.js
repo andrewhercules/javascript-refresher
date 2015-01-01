@@ -35,3 +35,16 @@ function removeNullsAndFalseFromArray(array) {
 function isNotFalse(element) {
   return element != false;
 };
+
+function reverseEveryElementInArray(array) {
+  var result =[];
+  for(var i=0; i < array.length; i++) {
+    result.push(array[i].split('').reverse().join(''));
+  };
+  return result;
+};
+
+function dropFirstThreeElements(array) {
+  array.splice(0, 3);
+  return array;
+};

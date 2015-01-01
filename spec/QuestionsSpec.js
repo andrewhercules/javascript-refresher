@@ -20,4 +20,14 @@ describe('JavaScript Refresher Questions', function() {
     expect(removeNullsAndFalseFromArray(testArray)).toEqual([true, 1, 2, 'x']);
   });
 
+  it('5. reverseEveryElementInArray', function() {
+      testArray = ['coffee', 'tea', 'cake', 'brownie'];
+      expect(reverseEveryElementInArray(testArray)).toEqual(['eeffoc', 'aet', 'ekac', 'einworb']);
+  });
+
+  it('6. dropFirstThreeElements', function() {
+    testArray = [1,2,3,4,5,6]
+    expect(dropFirstThreeElements(testArray)).toEqual([4,5,6]);
+  });
+  
 });
