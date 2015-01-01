@@ -131,6 +131,18 @@ describe('JavaScript Refresher Questions', function() {
   it('26. roundDownNumber: round all decimal numbers down to the previous whole number', function() {
     expect(roundDownNumber(3.5)).toEqual(3);
     expect(roundDownNumber(8.1623)).toEqual(8);
-  });  
+  });
+
+  it('27. formatDateNicely: format date in a user-friendly format', function() {
+    date = new Date(2015, 02, 24)
+    expect(formatDateNicely(date)).toEqual('24-Mar-2015');
+  });
+
+  it('28. getDomainNameFromEmailAddress: return domain name of email address without @ or .com', function() {
+    emailA = 'test@emailprovider.com';
+    emailB = 'test@emailme.co.uk'
+    expect(getDomainNameFromEmailAddress(emailA)).toEqual('emailprovider');
+    expect(getDomainNameFromEmailAddress(emailB)).toEqual('emailme');
+  });
 
 });

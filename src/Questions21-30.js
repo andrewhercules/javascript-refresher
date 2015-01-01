@@ -42,8 +42,22 @@ function roundUpNumber(number) {
   return Math.ceil(number);
 };
 
-// Question 25
+// Question 26
 
 function roundDownNumber(number) {
   return Math.floor(number);
+};
+
+// Question 27
+
+function formatDateNicely(date) {
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  var currentMonth = months[date.getMonth()]
+  return date.getDate()+ '-' +currentMonth+ '-' +date.getFullYear();
+  };
+
+// Question 28
+
+function getDomainNameFromEmailAddress(email) {
+  return email.split('@')[1].split('.')[0];
 };
