@@ -17,3 +17,21 @@ function selectElementsStartingWithVowel(array) {
   };
   return result;
 };
+
+function removeNullsFromArray(array) {
+  var result = array.filter(isNotNull);
+  return result
+};
+
+function isNotNull(element) {
+  return element != null;
+};
+
+function removeNullsAndFalseFromArray(array) {
+  var result = array.filter(isNotNull).filter(isNotFalse);
+  return result;
+};
+
+function isNotFalse(element) {
+  return element != false;
+};
