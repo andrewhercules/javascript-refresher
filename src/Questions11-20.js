@@ -44,3 +44,39 @@ function longestWordInArray(array) {
   });
   return array[0];
 };
+
+// Question 15
+
+function arrayTotal(array) {
+  var result = array.reduce(function(a, b) {
+    return a + b;
+  });
+  return result;
+};
+
+// Question 16
+
+function doubleArray(array) {
+  var result = array.concat(array);
+  return result;
+};
+
+// Question 17
+
+function averageOfArray(array) {
+  var result = array.reduce(function(a, b) {
+    return a + b;
+  });
+  return parseFloat((result / array.length).toFixed(1));
+};
+
+// Question 18
+
+function removeElementsGreaterThanFive(array) {
+  var result = array.filter(isLessThanFive);
+  return result;
+};
+
+function isLessThanFive(element) {
+  return element <= 5;
+};
