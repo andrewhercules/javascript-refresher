@@ -17,3 +17,33 @@ function addKeysAndValues(object) {
   };
   return result;
 };
+
+// Question 23
+
+function removeCapitalLettersFromString(string) {
+  var words = string.split(' ');
+  var tempArray = []
+  for(i = 0; i < words.length; i++) {
+    var noUpperCase = words[i].replace( /[A-Z]/g, '')
+    tempArray.push(noUpperCase);
+  };
+  return tempArray.join(' ');
+};
+
+// Question 24
+
+function everyPossiblePairing(arr) {
+  return 'TO COMPLETE'
+}
+
+// Question 25
+
+function roundUpNumber(number) {
+  return Math.ceil(number);
+};
+
+// Question 25
+
+function roundDownNumber(number) {
+  return Math.floor(number);
+};
