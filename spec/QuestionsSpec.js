@@ -145,4 +145,16 @@ describe('JavaScript Refresher Questions', function() {
     expect(getDomainNameFromEmailAddress(emailB)).toEqual('emailme');
   });
 
+  it('29. titleizeString: return string with first letter of each word capitalised, except for certain words (and, in, the, of, a, an, to)', function() {
+    testString = 'the definitive guide to international relations in the 21st century';
+    expect(titleizeString(testString)).toEqual('The Definitive Guide To International Relations In The 21st Century');
+  });
+
+  it('30. checkStringForSpecialCharacters: return true or false if string contains non-alphanumerical characters', function() {
+    stringA = 'abcd1234'
+    stringB = 'abcd1234!@#$'
+    expect(checkStringForSpecialCharacters(stringA)).toBe(false);
+    expect(checkStringForSpecialCharacters(stringB)).toBe(true);
+  });
+
 });
