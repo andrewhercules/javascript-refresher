@@ -80,3 +80,23 @@ function removeElementsGreaterThanFive(array) {
 function isLessThanFive(element) {
   return element <= 5;
 };
+
+// Question 19
+
+function convertArrayToObject(array) {
+  var rv = {};
+  for (var i = 0; i < array.length; i++)
+    rv[i] = array[i];
+    return rv;
+};
+
+// Question 20
+
+function getLettersInArrayOfWords(array) {
+  var tempArray = [];
+  var result = [];
+  for(i= 0; i < array.length; i++) {
+    tempArray.push(array[i].split(''));
+  };
+  return (result.concat.apply(result, tempArray)).sort();
+};
