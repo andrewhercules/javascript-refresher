@@ -78,3 +78,17 @@ function sortArrayByLastLetterOfEachWord(array) {
   });
   return array;
 };
+
+// Question 9
+
+function returnFirstHalfOfString(string) {
+  var endpoint = Math.ceil((string.length) / 2)
+  var result = string.split('').splice(0, endpoint).join('');
+  return result;
+};
+
+// Question 10
+
+function makeNumberNegative(number) {
+  return number < 0 ? number : number * -1
+};

@@ -36,9 +36,19 @@ describe('JavaScript Refresher Questions', function() {
       expect(addElementToBeginningOfArray(testArray, newElement)).toEqual(['a',1,2,3]);
   });
 
-  it('8. sortArrayByLastLetterOfEachWord', function() {
+  it('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
     testArray = ['oatmeal', 'coffee', 'toast', 'tea'];
     expect(sortArrayByLastLetterOfEachWord(testArray)).toEqual(['tea', 'coffee', 'oatmeal', 'toast'])
+  });
+
+  it('9. returnFirstHalfOfString: return first half of a string', function() {
+      expect(returnFirstHalfOfString('coffee')).toEqual('cof');
+      expect(returnFirstHalfOfString('water')).toEqual('wat');
+  });
+
+  it('10. makeNumberNegative: convert positive (or negative) number to a negative number', function() {
+    expect(makeNumberNegative(5)).toEqual(-5);
+    expect(makeNumberNegative(-3)).toEqual(-3);
   });
 
 });
