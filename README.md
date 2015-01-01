@@ -26,3 +26,7 @@ Clone the repository:
 ```
 $ git clone git@github.com:andrewhercules/javascript-refresher.git
 ```
+
+### Notes
+
+* symbolToString test removed due to limited support for JavaScript's Symbol() and Symbol.for() functions 
