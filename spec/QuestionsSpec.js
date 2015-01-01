@@ -94,8 +94,8 @@ describe('JavaScript Refresher Questions', function() {
   });
 
   it('19. convertArrayToObject: convert an array into an object with index as the key', function() {
-    testArray = ['a','b','c']
-    expect(convertArrayToObject(testArray)).toEqual({0: 'a', 1: 'b', 2:'c'})
+    testArray = ['a','b','c'];
+    expect(convertArrayToObject(testArray)).toEqual({0: 'a', 1: 'b', 2:'c'});
   });
 
   it('20. getLettersInArrayOfWords: return array with letters of all words sorted in alphabetical order', function() {
@@ -103,6 +103,14 @@ describe('JavaScript Refresher Questions', function() {
     expect(getLettersInArrayOfWords(testArray)).toEqual(['b','e','e','h','i','n','o','s','y','y'])
   });
 
+  it('21. swapKeysAndValuesInObject: return an object with key and values switched', function() {
+    testObject = {1:'a', 2:'b', 3:'c'};
+    expect(swapKeysAndValuesInObject(testObject)).toEqual({'a':1, 'b':2, 'c':3});
+  });
 
+  it('22. addKeysAndValues: return sum of numerical keys and values in object', function() {
+      testObject = {1:2, 3:4, 5:6}
+      expect(addKeysAndValues(testObject)).toEqual(21);
+  });
 
 });
