@@ -118,7 +118,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(removeCapitalLettersFromString(testString)).toEqual('offee lease andhankou')
   });
 
-  xit('24. everyPossiblePairing: return multidimensional array with every possible pairing and no duplicates', function() {
+  it('24. everyPossiblePairing: return multidimensional array with every possible pairing and no duplicates', function() {
     testArray = ['Emma', 'Samaire', 'Liam'];
     expect(everyPossiblePairing(testArray)).toEqual([['Emma', 'Samaire'], ['Emma', 'Liam'], ['Samaire', 'Liam']]);
   });

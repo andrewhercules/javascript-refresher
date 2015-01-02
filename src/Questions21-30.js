@@ -32,9 +32,18 @@ function removeCapitalLettersFromString(string) {
 
 // Question 24
 
-function everyPossiblePairing(arr) {
-  return 'TO COMPLETE'
-}
+function everyPossiblePairing(array) {
+  var result = [];
+    for(var x = 0; x < array.length - 1; x++) {
+      for(var y = 1; y < array.length; y++) {
+        if (array[x] != array[y]) {
+          combo = [array[x], array[y]];
+          result.push(combo);
+        };
+      };
+    };
+  return result;
+};
 
 // Question 25
 
