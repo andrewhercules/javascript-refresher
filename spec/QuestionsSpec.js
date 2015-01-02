@@ -157,4 +157,27 @@ describe('JavaScript Refresher Questions', function() {
     expect(checkStringForSpecialCharacters(stringB)).toBe(true);
   });
 
+  it('31. getUpperLimitOfRange: return max value of pre-determined range of numbers', function() {
+    range = Array.apply(null, Array(25)).map(function (_, i) {return i+1;});
+    expect(getUpperLimitOfRange(range)).toEqual(25);
+  });
+
+  it('32. squareRootOf: return the square root of a given number', function() {
+    numberA = 25;
+    numberB = 75;
+    expect(squareRootOf(25)).toEqual(5);
+    expect(squareRootOf(75)).toEqual(8.660254037844387);
+  });
+
+  it('33. callMethodFromString: allows user to call a method using the method name converted to a string', function() {
+    expect(callMethodFromString('sayHello')).toEqual('Hello!');
+  })
+
+  it('34. isA2015BankHoliday: returns true if a date is a 2015 Bank holiday', function() {
+    dateA = new Date(2015, 05, 25);
+    dateB = new Date(2015, 02, 06 );
+    expect(isA2015BankHoliday(dateA)).toEqual(true);
+    expect(isA2015BankHoliday(dateB)).toEqual(false);
+  });
+
 });
