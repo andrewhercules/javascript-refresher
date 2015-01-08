@@ -32,3 +32,20 @@ function isA2015BankHoliday(date) {
     return false;
   };
 };
+
+// Question 35
+
+function convertToRomanNumerals(number) {
+  var numberAsArray = number.toString().split('')
+  var romanOnesPlaceValue = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+  var romanTensPlaceValue = ['', 'X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC', 'C']
+  var romanHundredsPlaceValue = ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM', 'M']
+
+  if (number === 0) {
+    return 'n/a'
+  } else if (number <= 9) {
+    return romanOnesPlaceValue[numberAsArray[0]];
+  } else {
+    return romanTensPlaceValue[numberAsArray[0]] + romanOnesPlaceValue[numberAsArray[1]];
+  };
+};

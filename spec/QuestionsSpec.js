@@ -180,4 +180,13 @@ describe('JavaScript Refresher Questions', function() {
     expect(isA2015BankHoliday(dateB)).toEqual(false);
   });
 
+  it('35. convertToRomanNumerals: returns number from 0 to 99 in roman numeral format', function() {
+    numberA = 6;
+    numberB = 25;
+    numberC = 87;
+    expect(convertToRomanNumerals(numberA)).toEqual('VI');
+    expect(convertToRomanNumerals(numberB)).toEqual('XXV');
+    expect(convertToRomanNumerals(numberC)).toEqual('LXXXVII')
+  });
+
 });
